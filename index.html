@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Website using HTML and CSS</title>
+<link rel="stylesheet" href="MIP-2.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    
+    <div class="menu1">
+        
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+
+            <li><a href="#"><i class="fa fa-user"></i>AboutUs</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#"><i class="fa fa-user"></i>Mission</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i>Vision</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i>Team</a></li>
+
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me"><a href="#"><i class="fa fa-angle-right"></i>Marketing</a>
+                        
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>SEO</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Social media</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Email Marketing</a></li>
+                
+                                </ul>
+                            </div>                                         
+                        </li>
+                        
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Manintenance</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right "></i>Marketplace</a></li>
+                        </ul>
+                </div>
+            </li>
+
+            <li><a href="#"><i class="fa fa-inr"></i>Pricing</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#"><i class="fa fa-inr"></i>Retail</a></li>
+                    <li><a href="#"><i class="fa fa-inr"></i>Wholesale</a></li>
+                    </ul>
+            </div>
+            </li>
+
+        <!--
+            <li><a href="#"><i class="fa fa-edit"></i>Grooming</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#"><i class="fa fa-edit"></i>Tanning</a>
+                    <li><a href="#"><i class="fa fa-edit"></i>Filtration</a></li>
+                    <li><a href="#"><i class="fa fa-edit"></i>Feeding</a></li>
+                    </ul>
+            </div>
+            </li>
+
+            <li><a href="#"><i class="fa fa-edit"></i>Hospital</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-edit"></i>Medicines</a>
+                        <li><a href="#"><i class="fa fa-edit"></i>ICU Support</a></li>
+                    </ul>
+                </div>
+            </li>
+        -->
+
+            <li><a href="#"><i class="fa fa-phone"></i>Contact</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-inr"></i>Phone</a></li>
+                        <li><a href="#"><i class="fa fa-inr"></i>Email</a></li>
+                        <li><a href="#"><i class="fa fa-inr"></i>LiveChat</a></li>
+                        </ul>
+                </div>
+            </li> 
+        </ul>
+    </div>
+    
+
+      <div class="information">
+        <div class="overlay"></div>
+           <img src="logomain.png" class="mobile">
+             <div id="circle">
+                <div class="feature one"> <img src="processor.png"><div><h1>Processor</h1><p> hexa-core Apple A13 Bionic processor</p></div></div>
+                <div class="feature two">  <img src="camera.png"><div><h1>Camera</h1><p>Dual camera,12MP</p></div></div>
+                <div class="feature three">  <img src="display.png"><div><h1>Display</h1><p>LCD 6.1 inches,</p></div></div>
+                <div class="feature four">  <img src="battery.png"><div><h1>Battery</h1><p>3046mAh battery,supports wireless charging,fast charging</p></div></div>
+             </div>
+    
+        </div>
+
+
+      <div class="controls">
+        <img src="arrow.png" id="upBtn">
+           <h3>Features</h3>
+        <img src="arrow.png" id="downBtn">
+      </div>
+
+
+    <script>
+       var circle = document.getElementById("circle");
+       var upBtn = document.getElementById("upBtn");
+       var downBtn = document.getElementById("downBtn");
+
+
+       var rotateValue = circle.style.transform;
+       var rotateSum;
+
+       upBtn.onclick =function()
+       {
+          rotateSum = rotateValue + "rotate(-90deg)";
+          circle.style.transform=rotateSum;
+          rotateValue=rotateSum;
+       }
+       downBtn.onclick =function()
+       {
+          rotateSum = rotateValue + "rotate(90deg)";
+          circle.style.transform=rotateSum;
+          rotateValue=rotateSum;
+       }
+    </script>
+
+   
+</body>
+</html>
